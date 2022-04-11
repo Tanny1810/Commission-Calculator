@@ -1,7 +1,6 @@
 ## Employee adding page
 
 from tkinter import*
-# from main_pg import mnpg
 import mysql.connector
 
 conn=mysql.connector.connect(host='localhost',database='commission',user='root',password='123456')
@@ -23,15 +22,10 @@ class add_user:
 
         self.b1=Button(text='ADD EMPLOYEE',fg='white',bg='dark red',width=20,height=2,command=lambda: self.buttonclick(0))
 
-        
         self.e1=Entry(self.f,width=25,fg="black",bg="white",font=('Calibri',14))
         self.e2=Entry(self.f,width=25,fg="black",bg="white",font=('Calibri',14))
         self.e3=Entry(self.f,width=25,fg="black",bg="white",font=('Calibri',14))
         self.e4=Entry(self.f,width=25,fg="black",bg="white",font=('Calibri',14))
-        # self.e5=Entry(self.f,width=25,fg="black",bg="white",font=('Calibri',14))
-        # self.e6=Entry(self.f,width=25,fg="black",bg="white",font=('Calibri',14))
-
-            
 
         self.n.place(x=200,y=0)    
         self.n1.place(x=50,y=100)
@@ -42,21 +36,15 @@ class add_user:
         self.e3.place(x=250,y=200)
         self.n4.place(x=50,y=250)
         self.e4.place(x=250,y=250)
-        # self.n7.place(x=50,y=300)
-        # self.e5.place(x=250,y=300)
-        # self.n8.place(x=50,y=350)
-        # self.e6.place(x=250,y=350)
 
         self.b1.place(x=300,y=450)
 
     def buttonclick(self,num):
-        
-        # print(num)    
+          
         a=self.e1.get()
         b=self.e2.get()
         c=self.e3.get()
         d=self.e4.get()
-        # e=self.e6.get()
 
         if(num==0):
             empAdd = " insert into EMP VALUES (%s,%s,%s,%s)"
@@ -66,15 +54,12 @@ class add_user:
             cursor.execute(empAdd, insert_emp)
             
             conn.commit()
-            # self.root.destroy()
-            # mnpg()
             cursor.close()
             conn.close()
 
         else:
             return 
 
-            
 def add_emp():
     root=Tk()
 
