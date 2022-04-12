@@ -29,7 +29,7 @@ class comm():
         options = db_dropdown()
 
         self.clicked= StringVar()
-        self.clicked.set("select mail")
+        self.clicked.set("select ID")
 
         self.e2=OptionMenu( self.f , self.clicked , *options,command= self.getValue())
         self.e3=Entry(self.f,width=30,fg="black",bg="white",font=('Calibri',14))
@@ -38,6 +38,7 @@ class comm():
         self.n1.place(x=150,y=25)
         self.n2.place(x=50,y=100)
         self.e2.place(x=250,y=100,height=25, width=300)
+        # self.e2.config(width=10, height=2)
         self.n3.place(x=50,y=150)
         self.e3.place(x=250,y=150)
         self.n4.place(x=50,y=200)
