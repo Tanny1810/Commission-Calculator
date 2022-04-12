@@ -35,7 +35,7 @@ class comm():
         self.e3=Entry(self.f,width=30,fg="black",bg="white",font=('Calibri',14))
 
 
-        self.n1.place(x=250,y=25)
+        self.n1.place(x=150,y=25)
         self.n2.place(x=50,y=100)
         self.e2.place(x=250,y=100,height=25, width=300)
         self.n3.place(x=50,y=150)
