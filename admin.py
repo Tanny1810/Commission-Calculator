@@ -30,7 +30,6 @@ class login:
         self.e1.place(x=250,y=100)
         self.n2.place(x=50,y=150)
         self.e2.place(x=250,y=150)
-
         self.n4.place(x=250,y=25)
         
         self.b1.place(x=300,y=250)
