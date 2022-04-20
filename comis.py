@@ -1,4 +1,4 @@
-# Commission Calculate page for sending Email
+# Commission Calculate page
 
 from tkinter import *
 from fetch_pwd import matchID

@@ -1,4 +1,4 @@
-## Employee Deleting page
+## Employee Commission reset page
 
 from tkinter import *
 import mysql.connector
