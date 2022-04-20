@@ -41,7 +41,7 @@ class login:
 
         if(num==0):
             pwd=matchID(id,pw)
-            print(pwd)
+            # print(pwd)
             # if(pwd!=pw):
             #     time.sleep(0.5)
             #     self.n5=Label(text='Password did not match',font=('Calibri',14),fg='darkred',bg="dodgerblue3")
